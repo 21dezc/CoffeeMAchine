@@ -86,6 +86,7 @@ namespace machineCoffe
            ingredients["milk"] = 500;
            MessageBox.Show("เติมวัตถุดิบเรียบร้อยแล้วค่ะ");
            OnIngredientsChanged?.Invoke();  // แจ้งให้ UI อัปเดตวัตถุดิบ
-       }
+
+        }
     }
 }

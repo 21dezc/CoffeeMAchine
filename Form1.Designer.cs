@@ -38,6 +38,14 @@
             lblMilk = new Label();
             gbIngredient = new GroupBox();
             btnRefill = new Button();
+            lbBlackCoffee = new Label();
+            lblBlackCoffeeCount = new TextBox();
+            lblMochaCount = new TextBox();
+            lbMocha = new Label();
+            lblLatteCount = new TextBox();
+            lbLatte = new Label();
+            lblChocolateCount = new TextBox();
+            lbChocolate = new Label();
             gbIngredient.SuspendLayout();
             SuspendLayout();
             // 
@@ -89,7 +97,6 @@
             lblWater.Size = new Size(78, 15);
             lblWater.TabIndex = 16;
             lblWater.Text = "Water: 2000 g";
-            lblWater.Click += label1_Click;
             // 
             // lblCoffee
             // 
@@ -124,7 +131,7 @@
             gbIngredient.Controls.Add(lblMilk);
             gbIngredient.Controls.Add(lblCoffee);
             gbIngredient.Controls.Add(lblChocolate);
-            gbIngredient.Location = new Point(161, 38);
+            gbIngredient.Location = new Point(59, 44);
             gbIngredient.Name = "gbIngredient";
             gbIngredient.Size = new Size(258, 133);
             gbIngredient.TabIndex = 20;
@@ -141,11 +148,84 @@
             btnRefill.UseVisualStyleBackColor = true;
             btnRefill.Click += btnRefill_Click;
             // 
+            // lbBlackCoffee
+            // 
+            lbBlackCoffee.AutoSize = true;
+            lbBlackCoffee.Location = new Point(323, 68);
+            lbBlackCoffee.Name = "lbBlackCoffee";
+            lbBlackCoffee.Size = new Size(70, 15);
+            lbBlackCoffee.TabIndex = 22;
+            lbBlackCoffee.Text = "BlackCoffee";
+            // 
+            // lblBlackCoffeeCount
+            // 
+            lblBlackCoffeeCount.Location = new Point(397, 60);
+            lblBlackCoffeeCount.Name = "lblBlackCoffeeCount";
+            lblBlackCoffeeCount.Size = new Size(122, 23);
+            lblBlackCoffeeCount.TabIndex = 23;
+            // 
+            // lblMochaCount
+            // 
+            lblMochaCount.Location = new Point(397, 89);
+            lblMochaCount.Name = "lblMochaCount";
+            lblMochaCount.Size = new Size(122, 23);
+            lblMochaCount.TabIndex = 25;
+            // 
+            // lbMocha
+            // 
+            lbMocha.AutoSize = true;
+            lbMocha.Location = new Point(347, 97);
+            lbMocha.Name = "lbMocha";
+            lbMocha.Size = new Size(44, 15);
+            lbMocha.TabIndex = 24;
+            lbMocha.Text = "Mocha";
+            // 
+            // lblLatteCount
+            // 
+            lblLatteCount.Location = new Point(397, 118);
+            lblLatteCount.Name = "lblLatteCount";
+            lblLatteCount.Size = new Size(122, 23);
+            lblLatteCount.TabIndex = 27;
+            // 
+            // lbLatte
+            // 
+            lbLatte.AutoSize = true;
+            lbLatte.Location = new Point(353, 126);
+            lbLatte.Name = "lbLatte";
+            lbLatte.Size = new Size(33, 15);
+            lbLatte.TabIndex = 26;
+            lbLatte.Text = "Latte";
+            // 
+            // lblChocolateCount
+            // 
+            lblChocolateCount.Location = new Point(397, 148);
+            lblChocolateCount.Name = "lblChocolateCount";
+            lblChocolateCount.Size = new Size(122, 23);
+            lblChocolateCount.TabIndex = 29;
+            // 
+            // lbChocolate
+            // 
+            lbChocolate.AutoSize = true;
+            lbChocolate.Location = new Point(330, 151);
+            lbChocolate.Name = "lbChocolate";
+            lbChocolate.Size = new Size(61, 15);
+            lbChocolate.TabIndex = 28;
+            lbChocolate.Text = "Chocolate";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SandyBrown;
             ClientSize = new Size(630, 358);
+            Controls.Add(lblChocolateCount);
+            Controls.Add(lbChocolate);
+            Controls.Add(lblLatteCount);
+            Controls.Add(lbLatte);
+            Controls.Add(lblMochaCount);
+            Controls.Add(lbMocha);
+            Controls.Add(lblBlackCoffeeCount);
+            Controls.Add(lbBlackCoffee);
             Controls.Add(btnRefill);
             Controls.Add(gbIngredient);
             Controls.Add(btnChocolate);
@@ -157,6 +237,7 @@
             gbIngredient.ResumeLayout(false);
             gbIngredient.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -170,5 +251,13 @@
         private Label lblMilk;
         private GroupBox gbIngredient;
         private Button btnRefill;
+        private Label lbBlackCoffee;
+        private TextBox lblBlackCoffeeCount;
+        private TextBox lblMochaCount;
+        private Label lbMocha;
+        private TextBox lblLatteCount;
+        private Label lbLatte;
+        private TextBox lblChocolateCount;
+        private Label lbChocolate;
     }
 }
