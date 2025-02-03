@@ -4,6 +4,8 @@ by irada prorasri,
 673450206-5,
 Computer and Infomation Science, KKU
 
+![Coffee Machine](imge2.png)
+
 ## Updating the inventory and the number of times the drink order is pressed
 ```
 private void UpdateIngredientLabels()
